@@ -22,6 +22,41 @@
 </head>
 
 <body>
+
+  <style>
+    .slick-track {
+      height: 250px;
+    }
+
+    .slick-dots {
+      text-align: start;
+    }
+
+    .slick-next{
+      position: absolute;
+      right: 20px;
+    }
+
+    .slick-dots li button:before {
+      font-size: 12px;
+      color: #74ddf2d9;
+      opacity: 1;
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: #17a2b8;
+    }
+
+    .slider:not(:hover) .slick-dots {
+      opacity: 0;
+    }
+
+    .slick-arrow,
+    .slick-dots {
+      transition: opacity 0.5s ease-out;
+    }
+  </style>
+
   <div class="image">
     <img src="img/scientist_banner.png">
   </div>
@@ -54,6 +89,7 @@
       </div>
     </div>
   </nav>
+
   <div class="pages">
     <div class="container">
 
@@ -178,7 +214,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> 
 
       <div class="vision-mission">
         <div class="title">
@@ -187,18 +223,16 @@
         </div>
 
         <div class="content d-flex">
-          <div class="img-scientist">
             <img src="img/scientist.png" alt="ilmuan">
-          </div>
 
-          <div class="desc d-flex flex-column mx-5">
-            <div class="box">
+          <div class="desc d-flex flex-column">
+            <div class="box mx-3">
               <h6 class="mb-3">01</h6>
               <h3 class="mb-3">OUR VISION</h3>
               <p>“Menjadi rujukan utama untuk laboratorium, konsultan dan instrument daring”</p>
             </div>
 
-            <div class="box">
+            <div class="box mx-3">
               <h6 class="mb-3">02</h6>
               <h3 class="mb-3">OUR MISSION</h3>
               <p>“ Menciptakan nilai ekonomi bagi pemangku kepentingan melalui kalibrasi,
@@ -216,187 +250,56 @@
           <h1>Apa Kata Mereka</h1>
         </div>
 
-        <div id="slider-card" class="carousel slide" data-bs-ride="true">
-          <div class="prev-next">
-            <button class="carousel-control-prev" type="button" data-bs-target="#slider-card" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#slider-card" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#slider-card" data-bs-slide-to="0" class="active" aria-current="true"
-              aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#slider-card" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#slider-card" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_1.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>Anggana Putra</h3>
-                        <p>UI/UX Designer</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_2.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>James Gouse</h3>
-                        <p>CEO Bintang Prima</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_3.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>Corey Dias</h3>
-                        <p>Sekretariat PT. Dot Com</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_1.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>Anggana Putra</h3>
-                        <p>UI/UX Designer</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_2.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>James Gouse</h3>
-                        <p>CEO Bintang Prima</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_3.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>Corey Dias</h3>
-                        <p>Sekretariat PT. Dot Com</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_1.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>Anggana Putra</h3>
-                        <p>UI/UX Designer</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_2.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>James Gouse</h3>
-                        <p>CEO Bintang Prima</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="container">
-                    <div class="card-img d-flex">
-                      <img src="/img/pp_3.png" width="66">
-
-                      <div class="contant-card mx-3">
-                        <h3>Corey Dias</h3>
-                        <p>Sekretariat PT. Dot Com</p>
-                      </div>
-                    </div>
-
-                    <p class="card-text mt-3">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
+        <div class="testimonial">
+          <div class="card-testi">
+            <div class="content-card d-flex flex-column mt-5">
+              <img src="img/pp_1.png" width="54" style="margin: auto;">
+              <p class="mt-4" style="font-size: 16px;">You can take care of the documents you need for
+                licensing quickly and easily</p>
+              <p class="text-success" style="font-weight: 600;font-size: 16px;">Anggana Putra</p>
             </div>
           </div>
-
+          <div class="card-testi">
+            <div class="content-card d-flex flex-column mt-5">
+              <img src="img/pp_2.png" width="54" style="margin: auto;">
+              <p class="mt-4" style="font-size: 16px;">You can take care of the documents you need for
+                licensing quickly and easily</p>
+              <p class="text-success" style="font-weight: 600;font-size: 16px;">John Doe</p>
+            </div>
+          </div>
+          <div class="card-testi">
+            <div class="content-card d-flex flex-column mt-5">
+              <img src="img/pp_3.png" width="54" style="margin: auto;">
+              <p class="mt-4" style="font-size: 16px;">You can take care of the documents you need for
+                licensing quickly and easily</p>
+              <p class="text-success" style="font-weight: 600;font-size: 16px;">Corey Dias</p>
+            </div>
+          </div>
+          <div class="card-testi">
+            <div class="content-card d-flex flex-column mt-5">
+              <img src="img/pp_1.png" width="54" style="margin: auto;">
+              <p class="mt-4" style="font-size: 16px;">You can take care of the documents you need for
+                licensing quickly and easily</p>
+              <p class="text-success" style="font-weight: 600;font-size: 16px;">Anggana Putra</p>
+            </div>
+          </div>
+          <div class="card-testi">
+            <div class="content-card d-flex flex-column mt-5">
+              <img src="img/pp_2.png" width="54" style="margin: auto;">
+              <p class="mt-4" style="font-size: 16px;">You can take care of the documents you need for
+                licensing quickly and easily</p>
+              <p class="text-success" style="font-weight: 600;font-size: 16px;">John Doe</p>
+            </div>
+          </div>
+          <div class="card-testi">
+            <div class="content-card d-flex flex-column mt-5">
+              <img src="img/pp_3.png" width="54" style="margin: auto;">
+              <p class="mt-4" style="font-size: 16px;">You can take care of the documents you need for
+                licensing quickly and easily</p>
+              <p class="text-success" style="font-weight: 600;font-size: 16px;">Corey Dias</p>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -404,14 +307,14 @@
 
   <footer>
     <div class="container">
-      <div class="footer-content">
+      <div class="row footer-content">
 
-        <div class="footer-item">
+        <div class="col-xxl-6 col-xl-6 col-md-6 col-sm-6 footer-item ">
           <div class="footer-brand">
             <img src="img/brand.png" alt="">
           </div>
           <div class="footer-desc">
-            <p>Ruko Green valley Soho Blok A2<br>No.1 Kel. Sukamantri Kec. Tamansari<br>Kab. Bogor - Jawa Barat</p>
+            <p>Ruko Green Valley Soho Blok A2<br>No.1 Kel. Sukamantri Kec. Tamansari<br>Kab. Bogor - Jawa Barat</p>
           </div>
           <div class="footer-social d-flex flex-column">
             <a href=""><img src="img/icon_inbox.png" width="20"> bisa.support@bisa.com</a>
@@ -420,7 +323,7 @@
           </div>
         </div>
 
-        <div class="footer-item">
+        <div class="col-xxl-2 col-xl-2 col-md-2 col-sm-6 footer-item">
           <h1>Company</h1>
 
           <div class="menu">
@@ -432,7 +335,7 @@
           </div>
         </div>
 
-        <div class="footer-item">
+        <div class="col-xxl-2 col-xl-2 col-md-2 col-sm-6 footer-item">
           <h1>Layanan</h1>
 
           <div class="menu">
@@ -442,7 +345,7 @@
           </div>
         </div>
 
-        <div class="footer-item">
+        <div class="col-xxl-2 col-xl-2 col-md-2 col-sm-6 footer-item">
           <h1>Portofolio</h1>
 
           <div class="menu">
@@ -460,40 +363,80 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="slick.js"></script>
+  <script src="slick.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-  </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
   </script>
 
   <script>
     function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
     }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
 
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 
-    $(document).ready(function (){
+    $(document).ready(function () {
       $('.multiple-items').slick({
-          infinite: true,
-          autoplay: true,
-          autoplaySpeed: 2000,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          arrows: false
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+      });
+    });
+
+    $(document).ready(function () {
+      $('.testimonial').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
       });
     });
   </script>
